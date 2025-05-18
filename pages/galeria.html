@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria|Portafolio Fotografia</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+
+<!-- Botón hamburguesa -->
+<button id="menu-toggle" class="menu-toggle">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+<aside id="sidebar">
+  <h1><span>CAITLIN</span><strong>Cronenberg</strong></h1>
+  <nav>
+    <ul>
+      <li class="active"><a href="../index.html">Inicio</a></li>
+      <li><a href="../#sobre-mi">Sobre mí</a></li>
+      <li><a href="../pages/galeria.html">Galería</a></li>
+      <li><a href="../#servicios">Servicios</a></li>
+      <li><a href="../#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</aside>
+
+
+  <main>
+    <section class="galeria">
+  <h2>Galería</h2>
+
+  <div class="filtros">
+    <button class="activo" data-filtro="todos">Todos</button>
+    <button data-filtro="eventos">Eventos</button>
+    <button data-filtro="sesiones">Sesiones</button>
+    <button data-filtro="retratos">Retratos</button>
+  </div>
+
+  <div class="grid">
+    <div class="foto eventos"><img src="../assets/img/galeria-1.jpg" alt="cumpleaños"></div>
+    <div class="foto eventos"><img src="../assets/img/galeria-2.jpg" alt="cumpleaños"></div>
+    <div class="foto eventos"><img src="../assets/img/galeria-3.jpg" alt="casamientos"></div>
+    <div class="foto eventos"><img src="../assets/img/galeria-4.jpg" alt="casamiento"></div>
+    <div class="foto eventos"><img src="../assets/img/galeria-5.jpg" alt="baby showers"></div>
+    <div class="foto sesiones"><img src="../assets/img/galeria-6.jpg" alt=""></div>
+    <div class="foto sesiones"><img src="../assets/img/galeria-7.jpg" alt=""></div>
+    <div class="foto sesiones"><img src="../assets/img/galeria-8.jpg" alt=""></div>
+    <div class="foto sesiones"><img src="../assets/img/galeria-9.jpg" alt=""></div>
+    <div class="foto sesiones"><img src="../assets/img/galeria-10.jpg" alt=""></div>
+    <div class="foto retratos"><img src="../assets/img/galeria-11.jpg" alt=""></div>
+    <div class="foto retratos"><img src="../assets/img/galeria-12.jpg" alt=""></div>
+    <div class="foto retratos"><img src="../assets/img/galeria-13.jpg" alt=""></div>
+    <div class="foto retratos"><img src="../assets/img/galeria-14.jpg" alt=""></div>
+    <div class="foto retratos"><img src="../assets/img/galeria-15.jpg" alt=""></div>
+    
+    <!-- Más imágenes... -->
+  </div>
+</section>
+
+  </main>
+
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const sidebar = document.getElementById('sidebar');
+
+  toggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+
+  // Opcional: cerrar el menú cuando se hace clic en un enlace
+  const links = sidebar.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+    });
+  });
+</script>
+
+  <script>
+  const botones = document.querySelectorAll('.filtros button');
+  const fotos = document.querySelectorAll('.foto');
+
+  botones.forEach(boton => {
+    boton.addEventListener('click', () => {
+      const filtro = boton.getAttribute('data-filtro');
+
+      botones.forEach(b => b.classList.remove('activo'));
+      boton.classList.add('activo');
+
+      fotos.forEach(foto => {
+        if (filtro === 'todos' || foto.classList.contains(filtro)) {
+          foto.style.display = 'block';
+        } else {
+          foto.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

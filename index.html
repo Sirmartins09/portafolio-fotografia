@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <body>
+      
+<!-- Botón hamburguesa -->
+<button id="menu-toggle" class="menu-toggle">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+<aside id="sidebar">
+  <h1><span>CAITLIN</span><strong>Cronenberg</strong></h1>
+  <nav>
+    <ul>
+      <li class="active"><a href="./index.html">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="./pages/galeria.html">Galería</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</aside>
+
+
+
+  <main>
+        <div class="slider">
+      <div class="slides" id="slides">
+        <div class="slide"><img src="./assets/img/1.jpg" alt="Foto 1"></div>
+        <div class="slide"><img src="./assets/img/pexels-asphotograpy-106011.jpg" alt="Foto 2"></div>
+        <div class="slide"><img src="./assets/img/3.jpg" alt="Foto 3"></div>
+      </div>
+      <div class="nav-arrows">
+        <button onclick="prevSlide()">‹</button>
+        <button onclick="nextSlide()">›</button>
+      </div>
+    </div>
+
+    <!--sobre mi -->
+<section id="sobre-mi" class="sobre-mi">
+  <div class="contenedor">
+    <div class="texto">
+      <h2>Sobre mí</h2>
+      <h3>Hola, soy <span>Caitlin Cronenberg</span></h3>
+      <p>
+        Soy fotógrafa profesional con más de 10 años de experiencia retratando emociones,
+        historias y momentos únicos. Mi estilo mezcla lo clásico con lo urbano, siempre buscando una estética auténtica.
+      </p>
+      <p>
+        Me apasiona capturar la esencia de las personas y convertir cada sesión en una experiencia única.
+        Trabajo tanto en estudio como en exteriores, y mi portafolio incluye retratos, moda, eventos y arte conceptual.
+      </p>
+      <blockquote>
+        "Una buena fotografía es aquella que emociona, no solo la que se ve bien."
+      </blockquote>
+      <div class="datos">
+        <p><strong>📍 Ubicación:</strong> Toronto, Canadá</p>
+        <p><strong>📸 Especialidad:</strong> Retratos artísticos y fotografía editorial</p>
+        <p><strong>📅 Años de experiencia:</strong> 12</p>
+      </div>
+      <div class="redes">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="foto">
+      <img src="./assets/img/fotografa.jpg" alt="Foto de Caitlin Cronenberg">
+    </div>
+  </div>
+</section>
+
+<!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!--SERVICIOS-->
+<!-- Acordate de agregar esto en el <head> -->
+
+
+<section id="servicios" class="servicios">
+  <h2>¿Qué puedo hacer por vos?</h2>
+  <p class="intro">Capturo momentos únicos y los convierto en recuerdos inolvidables. Estos son algunos de mis servicios:</p>
+
+  <div class="cards-servicios">
+    <div class="card">
+      <i class="fa-solid fa-camera-retro icono"></i>
+      <h3>Sesiones Fotográficas</h3>
+      <p>Books personales, familiares, de pareja o retratos creativos.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-heart icono"></i>
+      <h3>Eventos Sociales</h3>
+      <p>Cobertura de cumpleaños, casamientos, bautismos y eventos especiales.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-shop icono"></i>
+      <h3>Fotografía Comercial</h3>
+      <p>Imágenes para marcas, productos, emprendimientos y redes sociales.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-tree icono"></i>
+      <h3>Fotografía de Naturaleza</h3>
+      <p>Captura de paisajes, fauna, flora y momentos al aire libre.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-video icono"></i>
+      <h3>Video y Edición</h3>
+      <p>Producción de videos y reels para promocionar tu imagen o evento.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-print icono"></i>
+      <h3>Impresiones y Álbumes</h3>
+      <p>Entrega de tus recuerdos en formatos físicos de alta calidad.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contacto">
+  <h2>Contacto</h2>
+      <i class="fa-solid fa-camera icono"></i>
+    ¿Querés reservar una sesión, consultar precios o simplemente contarme tu idea?<br>
+    Completá el formulario y me pondré en contacto con vos lo antes posible.<br>
+    ¡Estoy listo para capturar lo que imaginás!
+  <form>
+    <input type="text" placeholder="Nombre completo" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <textarea placeholder="Contame qué necesitás (tipo de proyecto, ideas, etc.)" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+  </main>
+
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const sidebar = document.getElementById('sidebar');
+
+  toggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+
+  // Opcional: cerrar el menú cuando se hace clic en un enlace
+  const links = sidebar.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+    });
+  });
+</script>
+
+
+
+
+
+    <script>
+    let currentIndex = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+
+    function showSlide(index) {
+      slides.style.transform = 'translateX(' + (-index * 100) + '%)';
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      showSlide(currentIndex);
+    }
+  </script>
+</body>
+</html>
