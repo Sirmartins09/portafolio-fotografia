@@ -30,17 +30,18 @@
 
 
   <main>
-        <div class="slider">
-      <div class="slides" id="slides">
-        <div class="slide"><img src="./assets/img/1.jpg" alt="Foto 1"></div>
-        <div class="slide"><img src="./assets/img/pexels-asphotograpy-106011.jpg" alt="Foto 2"></div>
-        <div class="slide"><img src="./assets/img/3.jpg" alt="Foto 3"></div>
-      </div>
-      <div class="nav-arrows">
-        <button onclick="prevSlide()">‹</button>
-        <button onclick="nextSlide()">›</button>
-      </div>
-    </div>
+ <div class="slider">
+  <div class="slides" id="slides">
+    <div class="slide"><img src="./assets/img/slider-1.jpg" alt="Foto 1"></div>
+    <div class="slide"><img src="./assets/img/slider-2.jpg" alt="Foto 2"></div>
+    <div class="slide"><img src="./assets/img/slider-3.jpg" alt="Foto 3"></div>
+  </div>
+  <div class="nav-arrows">
+    <button onclick="prevSlide()">‹</button>
+    <button onclick="nextSlide()">›</button>
+  </div>
+</div>
+
 
     <!--sobre mi -->
 <section id="sobre-mi" class="sobre-mi">
@@ -78,6 +79,8 @@
 
 <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
+      <div class="contenedor">
+
         <div class="contenido-seccion">
             <h2>Curriculum</h2>
             <div class="fila">
@@ -144,68 +147,74 @@
                 </div>
             </div>
         </div>
+      </div>
     </section>
 
- <!--SERVICIOS-->
-<!-- Acordate de agregar esto en el <head> -->
-
+<!--SERVICIOS-->
 
 <section id="servicios" class="servicios">
-  <h2>¿Qué puedo hacer por vos?</h2>
-  <p class="intro">Capturo momentos únicos y los convierto en recuerdos inolvidables. Estos son algunos de mis servicios:</p>
+  <div class="contenedor">
 
-  <div class="cards-servicios">
-    <div class="card">
-      <i class="fa-solid fa-camera-retro icono"></i>
-      <h3>Sesiones Fotográficas</h3>
-      <p>Books personales, familiares, de pareja o retratos creativos.</p>
+    <h2>¿Qué puedo hacer por vos?</h2>
+    <p class="intro">Capturo momentos únicos y los convierto en recuerdos inolvidables. Estos son algunos de mis servicios:</p>
+  
+    <div class="cards-servicios">
+      <div class="card">
+        <i class="fa-solid fa-camera-retro icono"></i>
+        <h3>Sesiones Fotográficas</h3>
+        <p>Books personales, familiares, de pareja o retratos creativos.</p>
+      </div>
+  
+      <div class="card">
+        <i class="fa-solid fa-heart icono"></i>
+        <h3>Eventos Sociales</h3>
+        <p>Cobertura de cumpleaños, casamientos, bautismos y eventos especiales.</p>
+      </div>
+  
+      <div class="card">
+        <i class="fa-solid fa-shop icono"></i>
+        <h3>Fotografía Comercial</h3>
+        <p>Imágenes para marcas, productos, emprendimientos y redes sociales.</p>
+      </div>
+  
+      <div class="card">
+        <i class="fa-solid fa-tree icono"></i>
+        <h3>Fotografía de Naturaleza</h3>
+        <p>Captura de paisajes, fauna, flora y momentos al aire libre.</p>
+      </div>
+  
+      <div class="card">
+        <i class="fa-solid fa-video icono"></i>
+        <h3>Video y Edición</h3>
+        <p>Producción de videos y reels para promocionar tu imagen o evento.</p>
+      </div>
+  
+      <div class="card">
+        <i class="fa-solid fa-print icono"></i>
+        <h3>Impresiones y Álbumes</h3>
+        <p>Entrega de tus recuerdos en formatos físicos de alta calidad.</p>
+      </div>
     </div>
-
-    <div class="card">
-      <i class="fa-solid fa-heart icono"></i>
-      <h3>Eventos Sociales</h3>
-      <p>Cobertura de cumpleaños, casamientos, bautismos y eventos especiales.</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-shop icono"></i>
-      <h3>Fotografía Comercial</h3>
-      <p>Imágenes para marcas, productos, emprendimientos y redes sociales.</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-tree icono"></i>
-      <h3>Fotografía de Naturaleza</h3>
-      <p>Captura de paisajes, fauna, flora y momentos al aire libre.</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-video icono"></i>
-      <h3>Video y Edición</h3>
-      <p>Producción de videos y reels para promocionar tu imagen o evento.</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-print icono"></i>
-      <h3>Impresiones y Álbumes</h3>
-      <p>Entrega de tus recuerdos en formatos físicos de alta calidad.</p>
-    </div>
+  </section>
   </div>
-</section>
 
+<!--CONTACTO-->
 <section id="contacto" class="contacto">
-  <h2>Contacto</h2>
-      <i class="fa-solid fa-camera icono"></i>
-    ¿Querés reservar una sesión, consultar precios o simplemente contarme tu idea?<br>
-    Completá el formulario y me pondré en contacto con vos lo antes posible.<br>
-    ¡Estoy listo para capturar lo que imaginás!
-  <form>
-    <input type="text" placeholder="Nombre completo" required>
-    <input type="email" placeholder="Correo electrónico" required>
-    <textarea placeholder="Contame qué necesitás (tipo de proyecto, ideas, etc.)" required></textarea>
-    <button type="submit">Enviar mensaje</button>
-  </form>
-</section>
+  <div class="contenedor">
+
+    <h2>Contacto</h2>
+        <i class="fa-solid fa-camera icono"></i>
+      ¿Querés reservar una sesión, consultar precios o simplemente contarme tu idea?<br>
+      Completá el formulario y me pondré en contacto con vos lo antes posible.<br>
+      ¡Estoy listo para capturar lo que imaginás!
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Contame qué necesitás (tipo de proyecto, ideas, etc.)" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+  </div>
 
   </main>
 
@@ -230,24 +239,24 @@
 
 
 
-    <script>
-    let currentIndex = 0;
-    const slides = document.getElementById('slides');
-    const totalSlides = slides.children.length;
+<script>
+  let currentSlide = 0;
+  const slides = document.getElementById("slides");
+  const totalSlides = slides.children.length;
 
-    function showSlide(index) {
-      slides.style.transform = 'translateX(' + (-index * 100) + '%)';
-    }
+  function updateSlidePosition() {
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
 
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      showSlide(currentIndex);
-    }
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlidePosition();
+  }
 
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      showSlide(currentIndex);
-    }
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+  }
   </script>
 </body>
 </html>
